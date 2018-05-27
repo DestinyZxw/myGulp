@@ -15,7 +15,7 @@ var inject = require('gulp-js-text-inject');    // 读取text文件
 const dirResult = 'result/'; // 临时文件所在的目录
 const content = 'content/';  // 内容目录
 const dirResultSrc = dirResult + 'src/'; // 临时文件目录中存放源代码相关的地方
-const contentName = 'jobTime.text';   // 内容名称
+const contentName = 'jobTime.txt';   // 内容名称
 
 // 拷贝相关的文件
 gulp.task('Module:CopyAllFiles', function () {
