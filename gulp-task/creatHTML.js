@@ -37,10 +37,7 @@ function fileContentHandle() {
 
     jobArr = jobArr.map((item) => {
         let sonArr = [], htmlTemplate = '';
-        sonArr = item.replace(/\n/g, '').split(' ').filter((key, index) => {
-            return key !== ''
-        });
-
+        sonArr = item.replace(/\n/g, '').split(' ').filter((key, index) => key !== '');
         htmlTemplate = `<tr><td>${sonArr[0] }</td><td>${sonArr[1] }</td><td>${sonArr[2] }</td><td>${sonArr[3] }</td><td>${sonArr[4] }</td></tr>`;
         return htmlTemplate;
     });
